@@ -398,7 +398,7 @@ var AirPlane = function(){
   this.mesh.add(this.propeller);
 
   var wheelProtecGeom = new THREE.BoxGeometry(30,15,10,1,1,1);
-  var wheelProtecMat = new THREE.MeshPhongMaterial({color:Colors.red, shading:THREE.FlatShading});
+  var wheelProtecMat = new THREE.MeshPhongMaterial({color:Colors.blue, shading:THREE.FlatShading});
   var wheelProtecR = new THREE.Mesh(wheelProtecGeom,wheelProtecMat);
   wheelProtecR.position.set(25,-20,25);
   this.mesh.add(wheelProtecR);
