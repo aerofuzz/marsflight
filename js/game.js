@@ -217,19 +217,19 @@ var Pilot = function(){
   this.angleHairs=0;
 
   var bodyGeom = new THREE.BoxGeometry(15,15,15);
-  var bodyMat = new THREE.MeshPhongMaterial({color:Colors.brown, shading:THREE.FlatShading});
+  var bodyMat = new THREE.MeshPhongMaterial({color:Colors.blue, shading:THREE.FlatShading});
   var body = new THREE.Mesh(bodyGeom, bodyMat);
   body.position.set(2,-12,0);
 
   this.mesh.add(body);
 
   var faceGeom = new THREE.BoxGeometry(10,10,10);
-  var faceMat = new THREE.MeshLambertMaterial({color:Colors.pink});
+  var faceMat = new THREE.MeshLambertMaterial({color:Colors.brown});
   var face = new THREE.Mesh(faceGeom, faceMat);
   this.mesh.add(face);
 
   var hairGeom = new THREE.BoxGeometry(4,4,4);
-  var hairMat = new THREE.MeshLambertMaterial({color:Colors.brown});
+  var hairMat = new THREE.MeshLambertMaterial({color:Colors.blue});
   var hair = new THREE.Mesh(hairGeom, hairMat);
   hair.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(0,2,0));
   var hairs = new THREE.Object3D();
@@ -266,7 +266,7 @@ var Pilot = function(){
   this.mesh.add(hairs);
 
   var glassGeom = new THREE.BoxGeometry(5,5,5);
-  var glassMat = new THREE.MeshLambertMaterial({color:Colors.brown});
+  var glassMat = new THREE.MeshLambertMaterial({color:Colors.blue});
   var glassR = new THREE.Mesh(glassGeom,glassMat);
   glassR.position.set(6,0,3);
   var glassL = glassR.clone();
